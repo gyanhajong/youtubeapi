@@ -18,7 +18,7 @@ function runSample() {
             publishedAfter: '2021-01-01T00:00:00Z',
             type: 'video',
             q: "errichto",
-            key: 'AIzaSyBJFRtYrUMg22wHy6BKYjFQRkNOmkyogfc'
+            key: process.env.API_KEY
 
         }
     })
