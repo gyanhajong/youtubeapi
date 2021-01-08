@@ -14,7 +14,7 @@ var routes = require('./api/routes/routes');
 
 // mongoose connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/fampay', {
+mongoose.connect('mongodb://db/fampay', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
@@ -26,8 +26,8 @@ mongoose.connect('mongodb://localhost/fampay', {
     process.exit();
 });
 
-//setInterval(collectVideos, 10000);
-collectVideos();
+setInterval(collectVideos, 100000); //currently set to 1 hour due to limit in API Quota
+//collectVideos();
 
 routes(app);
 
