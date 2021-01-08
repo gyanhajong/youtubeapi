@@ -15,8 +15,9 @@ Should have docker installed in your local system.
 Base Endpoint for videos: http://localhost:3000/api/videos
 
 **Response**
-```
+
 A paginated response of the below structure:
+```
     {
         "totalPages": 1,
         "currentPage": 0,
