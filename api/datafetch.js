@@ -8,7 +8,7 @@ const axios = require('axios');
 
 var npageToken = "";
 
-function runSample() {
+function runFetch() {
     console.log("pageToken "+npageToken);
     axios.get('https://youtube.googleapis.com/youtube/v3/search?',{
         params: {
@@ -36,7 +36,7 @@ function runSample() {
 }
 
 if (module === require.main) {
-  runSample().catch(console.error);
+  runFetch().catch(console.error);
 }
 var videoTitle, videoId, videoDesc, videoThumbnail;
 
@@ -58,6 +58,6 @@ function uploadData(response) {
             else console.log("Success!"+npageToken+"\n");
         });
     });
-    if(npageToken!=undefined||noPP>0) runSample();
+    if(npageToken!=undefined||noPP>0) runFetch();
 }
-module.exports = runSample;
+module.exports = runFetch;

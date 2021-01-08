@@ -25,9 +25,8 @@ mongoose.connect('mongodb://db/fampay', {
     console.log("Cannot connect to the database!", err);
     process.exit();
 });
-
-setInterval(collectVideos, 100000); //currently set to 1 hour due to limit in API Quota
-//collectVideos();
+collectVideos();
+//setInterval(collectVideos, 10000);
 
 routes(app);
 
