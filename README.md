@@ -15,6 +15,7 @@ Should have docker installed in your local system.
 Base Endpoint for videos: http://localhost:3000/api/videos
 
 **Response**
+```
 A paginated response of the below structure:
     {
         "totalPages": 1,
@@ -25,6 +26,7 @@ A paginated response of the below structure:
         },
         "items": []
     }
+```
 
 **totalPages** - Gives the total number of pages available for the search or default hitting of the endpoint.
 **currentPage** - The page number of the current response.
