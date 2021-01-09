@@ -8,7 +8,7 @@ Should have docker installed in your local system.
 
 ### Steps to start the backend application
 * Download the project in your local machine.
-* Run "docker-compose up" after going inside the downloaded project.
+* Run "docker-compose up" after going inside the downloaded project directory.
 * Once the containers are up, we can hit the API endpoint from the local system.
 ## API Guide
 
