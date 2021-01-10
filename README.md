@@ -54,4 +54,5 @@ Only Videos published after: 2021-01-01T00:00:00Z
 You may make the changes in the attributes value from the file api/datafetch.js(line 14 defines the params/attributes)
 
 ## Note 
-The data fetching is currently done once due to quota limit. You may uncomment the line 29 in server.js file for setting it to fetch after every regular interval.
+The data fetching is currently done once due to quota limit. You may uncomment the line 29 in server.js file for setting it to fetch after every regular interval.\
+Using a script for waiting the DB to start before the node app starts to connect and do operations: https://github.com/eficode/wait-for/blob/master/wait-for
